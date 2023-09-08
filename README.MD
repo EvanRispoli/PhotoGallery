@@ -74,19 +74,56 @@ Try the different values to see how they affect the layout.
 When you are done, set an explicit flex-direction of row on the .gallery element.
 
 13. [ ]   **Step 13**
+The flex-wrap property determines how your flex items behave when the flex container is too small. Setting it to wrap will allow the items to wrap to the next row or column. nowrap (default) will prevent your items from wrapping and shrink them if needed.
+
+Make it so your flex items wrap to the next row when they run out of space.
 
 14. [ ]   **Step 14**
+The justify-content property determines how the items inside a flex container are positioned along the main axis, affecting their position and the space around them.
+
+Give your .gallery selector a justify-content property with center as the value.
 
 15. [ ]   **Step 15**
+The align-items property positions the flex content along the cross axis. In this case, with your flex-direction set to row, your cross axis would be vertical.
+
+To vertically center your images, give your .gallery selector an align-items property with center as the value.
 
 16. [ ]   **Step 16**
+Give your .gallery selector a padding property set to 20px 10px to create some space around the container.
+
+Then, give it a max-width of 1400px and add a margin of 0 auto to center it.
 
 17. [ ]   **Step 17**
+Notice how some of your images have become distorted. This is because the images have different aspect ratios. Rather than setting each aspect ratio individually, you can use the object-fit property to determine how images should behave.
+
+Give your .gallery img selector the object-fit property and set it to cover. This will tell the image to fill the img container while maintaining aspect ratio, resulting in cropping to fit.
 
 18. [ ]   **Step 18**
+Your images need some space between them.
+
+The gap CSS shorthand property sets the gaps, also knowns as gutters, between rows and columns. The gap property and its row-gap and column-gap sub-properties provide this functionality for flex, grid, and multi-column layout. You apply the property to the container element.
+
+Give your .gallery flex container a gap property with 16px as the value.
 
 19. [ ]   **Step 19**
+Step 19
+Smooth out your images a bit by giving the .gallery img selector a border-radius property with 10px set as the value.
 
 20. [ ]   **Step 20**
+The ::after pseudo-element creates an element that is the last child of the selected element. You can use it to add an empty element after the last image. If you give it the same width as the images it will push the last image to the left when the gallery is in a two-column layout. Right now, it is in the center because you set justify-content: center on the flex container.
 
-- [ ]   **Step 21**
+Example:
+
+```
+.container::after {
+  content: "";
+  width: 860px;
+}
+```
+
+Create a new selector using an ::after pseudo-element on the .gallery element. Add a content property set to an empty string "" and 350px set for the width property.
+
+21. [ ]   **Step 21**
+The alt image attribute should describe the image content. Screen readers announce the alternative text in place of images. If the image can't be loaded, this text is presented in place of the image.
+
+To complete the project, add an alt attribute to all nine of your cat images to describe them. Use a value at least five characters long for each.
