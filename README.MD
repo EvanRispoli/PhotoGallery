@@ -10,7 +10,7 @@ In this course, you'll use Flexbox to build a responsive photo gallery webpage.*
 ### STEPS
 
 
-1. [x]   **Step 1**
+<span style="color: red;">1. [x]   **Step 1**</span>
 Begin with your standard HTML boilerplate. Add a DOCTYPE declaration, an html element, a head element, and a body element.
 Add the lang attribute to the opening <html> tag with en set as the value.
 
