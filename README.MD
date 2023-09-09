@@ -21,17 +21,17 @@ Also add a meta tag with the charset set to UTF-8.
 3. [x]   **Step 3**
 Within your head element, add a title element with the text set to Photo Gallery, and a link element to add your styles.css file to the page.
 
-4. [ ]   **Step 4**
+4. [x]   **Step 4**
 Add a header element within the body element and assign a class of header to it.
 
-5. [ ]   **Step 5**
+5. [x]   **Step 5**
 Below your .header element, create a new div element and assign it a class of gallery. This div will act as a container for the gallery images.
 Inside that .gallery element, create nine img elements.
 
-6. [ ]   **Step 6**
+6. [x]   **Step 6**
 Next, give each img a src attribute according to its order in the document. The first img should have a src of https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg. The rest should be the same, except replace the 1 with the number the img is in the document.
 
-7. [ ]   **Step 7**
+7. [x]   **Step 7**
 Normalize your box model by creating a * selector and setting the box-sizing property to border-box as the value.
 
 8. [ ]   **Step 8**
